@@ -1,0 +1,20 @@
+<div class="span12">
+  <table class="table">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+    <% @rs.each do |row| %>
+    <tbody>
+    <tr>
+      <td><%= row['id'] %></td>
+      <td><%= row['name'] %></td>
+    </tr>
+    <% end %>
+    </tbody>
+  </table>
+  <a class = "back btn" href="/">Home</a></li>
+</div>
+
+
+

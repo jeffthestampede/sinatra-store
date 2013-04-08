@@ -1,0 +1,97 @@
+.home {
+  list-style: none;
+  text-align: center;
+  margin-top: 100px;
+  margin-right: 75px;
+  margin-left: 75px;
+}
+
+li {
+  list-style: none;
+}
+
+tbody:nth-child(even) {
+  background-color: #696969;
+}
+
+.table-hover tbody tr:hover > td,
+.table-hover tbody tr:hover > th {
+  background-color: black;
+}
+
+body {
+  background-image: url("https://lh4.googleusercontent.com/-_loai1Qr6Yk/UV5fSU6QIjI/AAAAAAAAAOs/bpZBGjaqzcs/s860/bamboo+1920x1200-6.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100%;
+}
+
+table {
+  text-align: center;
+  color: white;
+}
+
+.description {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+
+table {
+  font-family: 'Nunito', sans-serif;
+}
+
+.api {
+  text-align: center;
+}
+
+.googleimg {
+  width: 200px;
+  height: auto;
+  border: 6px solid white;
+  border-radius: 5px
+}
+
+.product_links {
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+.complete {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+}
+
+form {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+.twitter {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+a {
+color: white;
+text-decoration: none;
+}
+
+.panda {
+  margin-top: 20px;
+  border: 6px solid white;
+  border-radius: 3px
+}
+
+.store_name {
+  font-size: 80px;
+  line-height: 90%;
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+  font-family: 'Nunito', sans-serif;

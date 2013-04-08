@@ -1,0 +1,30 @@
+<div class="span12">
+  <table class="table table-hover">
+  <tr>
+    <th>Product Name</th>
+    <th>Price</th>
+    <th>Sale Item</th>
+    <th>Search on Twitter</th>
+  </tr>
+  <% @rs.each do |row| %>
+  <tbody>
+  <tr>
+    <td><a href="/products/<%= row['id'] %>/<%= URI.escape(row['name']) %>"><%= row['name'] %></td>
+    <td>$<%= sprintf "%.2f", (row['price']).round(2) %></td>
+    <td>
+        <% if row["on_sale"]== 't'%>
+          <img src="http://www.techscreens.com/wp-content/themes/blognews/images/sale.png">
+        <% end %>
+    </td>
+    <td>
+      <a href="/products/search?q=<%= URI.escape(row['name']) %>">
+        <img src="https://lh6.googleusercontent.com/-C_ioXiToNHo/UVuYpa3WD8I/AAAAAAAAAMM/t9hV9H4tCuU/s32/social-twitter.png">
+      </a>
+    </td>
+  </tr>
+  <% end %>
+  </tbody>
+  </table>
+  <a class = "back btn" href="/">Home</a></li>
+  <a class = "newproduct btn bt-info" href="/product/new">Add New Product</a></li>
+</div>

@@ -1,0 +1,10 @@
+<h1>
+  <%= @q %> on Twitter  <img src="https://lh6.googleusercontent.com/-C_ioXiToNHo/UVuYpa3WD8I/AAAAAAAAAMM/t9hV9H4tCuU/s32/social-twitter.png"> 
+</h1>
+
+<% @results["results"].each do |result| %>
+  <div class="twittersearch">
+    <img src="<%= result["profile_image_url"] %>">
+    <p class="twitter"><%= result["text"] %></p>
+  </div>
+<% end %>

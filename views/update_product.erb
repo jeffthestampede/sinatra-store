@@ -1,0 +1,15 @@
+<div class="span12">
+  <ul>
+    <h1>Update Product</h1>
+    <form action="/products/<%= @id %>/show_form" method="post">
+      <label for="product_name">Product Name</label>
+      <input type="text" name="product_name">
+      <label for="product_price">Product Price</label>
+      <input type="text" name="product_price">
+      <p></p>
+      <input type="checkbox" class="checkbox" name="on_sale" value="t">Sale Item
+      <p></p>
+      <button class = "back btn">Update</button>
+    </form>
+  </ul>
+</div>

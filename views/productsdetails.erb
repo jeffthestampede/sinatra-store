@@ -1,0 +1,38 @@
+<div class="span12">
+  <ul>
+    <table class="table table-hover">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Sale Item</th>
+      </tr>
+      <% @rs.each do |row| %>
+      <tbody>
+      <tr>
+          <td><%= row['id'] %></td>
+          <td><%= row['name'] %></td>
+          <td>$<%= sprintf "%.2f", (row['price']).round(2) %></td>
+          <td>
+            <% if row["on_sale"]== 't'%>
+            <img src="http://www.techscreens.com/wp-content/themes/blognews/images/sale.png">
+            <% end %>
+      </tr>
+      </tbody>
+    </table>
+      <div class="api">
+        <img class="googleimg" src="<%= @results["items"][1]["product"]["images"][0]["link"] %>">
+      </div>
+      <div class="description">
+        <p>Description:</p>
+        <p><%= @results["items"][1]["product"]["description"] %></p>
+      </div>
+      <p></p>
+      <li><a class = "back btn" href="/products/<%= @id %>/show_form">Update Item</a></li>
+      <p></p>
+      <li><a class = "back btn btn-danger" href="/products/<%= @id %>/delete">Delete Item</a></li>
+      <p></p>
+      <li><a class = "back btn" href="/">Home</a></li>
+      <% end %>
+  </ul>
+</div>
