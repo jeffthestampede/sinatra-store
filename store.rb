@@ -1,5 +1,5 @@
 # gem install --version 1.3.0 sinatra
-gem 'sinatra', '1.3.0'
+gem 'sinatra'
 require 'sinatra'
 require 'sinatra/reloader'
 require 'sqlite3'
